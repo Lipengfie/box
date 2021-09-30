@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逐帧动画</title>
+    <style>
+        .box1{
+            height: 119px;
+            width: 73px;
+            background: url(.//hua.jpg);
+            animation: hua 1s steps(6) infinite;
+        }
+        @keyframes hua {
+            from{
+                background-position-x: 0;
+            }
+            to{
+                background-position-x: -438px;
+            }
+        }
+        .box2{
+            width: 662px;
+            height: 681.7px;
+            background: url(.//jd.png);
+            animation: jd 1s steps(3) infinite;
+        }
+        @keyframes jd {
+            from{
+                background-position-y: 0;
+            }
+            to{
+                background-position-y: -2045px;
+            }
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background: url(.//loading.png);
+            animation: await 1s steps(8) infinite;
+        }
+        @keyframes await {
+            from{
+                background-position-x: 0;
+            }
+            to{
+                background-position-x: -800px;
+            }
+        }
+        .box4{
+            width: 140px;
+            height: 140px;
+            background: url(.//run.png);
+            animation: run 1s steps(12) infinite;
+        }
+        @keyframes run {
+            from{
+                background-position-x: 0;
+            }
+            to{
+                background-position-x: -1680px;
+            }
+        }
+        .box5{
+            width: 137.2px;
+            height: 156px;
+            background: url(.//run2.png);
+            animation: run2 1s steps(10) infinite;
+        }
+        @keyframes run2 {
+            from{
+                background-position-x: 0;
+            }
+            to{
+                background-position-x: -1372px;
+            }
+        }
+        .box6{
+            width: 180px;
+            height: 293px;
+            background: url(.//walk.jpg);
+            animation: walk 1s steps(6) infinite;
+        }
+        @keyframes walk {
+            from{
+                background-position-x: 0;
+            }
+            to{
+                background-position-x: -1080px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+</body>
+</html>
